@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+a{color: inherit;text-decoration: none;}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+.container {
+    max-width: 83%;
+    margin: 0 auto;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    
+}
+.menuItem:hover {
+    border-bottom: solid rgb(11, 78, 221);
+    padding-bottom: 3px;
+}
+
+.main-slang {
+    font-size: 90px;
+    background-clip: text;
+    background-image: linear-gradient(83.84deg, rgb(0, 136, 255) -6.87%, rgb(160, 51, 255) 26.54%, rgb(255, 92, 135) 58.58%);
+    -webkit-text-fill-color: transparent ;
+    font-weight: 600;
+    letter-spacing: -8px;
+    display: block;
+    width: 100%;
+    min-height: 50%;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.normal-letter {
+    font-size: 17px;
+    color: rgb(89, 89, 89);
+    line-height: 1.5;
+   
+}
+.input-group {
+    width: 70%;
+}
+
+.input1 {
+    outline: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+input:focus {
+    border: 1px solid rgb(10, 124, 255);
+}
+
+.login-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: rgb(10, 124, 255) ;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.loginBtnForget {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.span1 {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(10, 124, 255) ;
+    text-decoration: underline;
+}
+.checkBoxNspan {
+    width: 60%;
+    display: flex;
+    margin: 25px 0 ;
+    justify-content: left;
+    gap: 10px;
+    color: rgb(89, 89, 89);
+}
+.input2 {
+    width: 25px;
+    
+}
+
+.image2 {
+    width: 120px;
+    height: 40px;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
+}
+
+.left {
+    width: 50%;
+   
+}
+.right {
+    width: 50%;
+}
+.phone-image {
+    width: 90%;
+   float: right;
+    
+}
+.footer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul li {
+    font-size: 13px;
+}
+.meta-photo {
+    width: 150px;
+    height: 47px;
+}
+.select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.select:hover {
+    border-bottom: 3px solid black;
+    margin-bottom: -4px;
+}
+.stuck {
+    position: fixed;
+}
+.menuForMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+
+}
+.menuForMobile img {
+    width: 40px;
+    height: 40px;
+}
+
+.model-box{
+    width: 500px;
+    height: 150px;
+    background-color: pink;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 50px;
+    display: none;
+}
+
+@media (max-width: 767px){
+    #navBar {
+        display: flex;
+        align-items: center;
+    }
+    .menuForPC {
+        display: none;
+    }
+
+    .menuForMobile {
+        display: block;
+    }
+    .left {
+        width: 100%;
+    }
+    .inner-left{
+        margin: 0 auto;
+    }
+    .main-slang{
+        text-align: center;
+    }
+    .letter-group {
+        width: 100%;
+        
+    }
+    .input-group {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .phone-image{
+        width: 100%;
+    }
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .img-div {
+        display: flex;
+        justify-content: center;
+        
+    }
+}
